@@ -8,3 +8,4 @@
 ## requerimientos no funcionales
 - RN01
 - RN02
+- RN03
