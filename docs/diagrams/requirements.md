@@ -6,3 +6,5 @@
 - R03
 - R04
 ## requerimientos no funcionales
+- RN01
+- RN02
