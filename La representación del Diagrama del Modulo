@@ -1,0 +1,80 @@
+Representacion del diagrama de los modulos 
+Template completo de seguimiento de Diagramas de Casos de Uso — BL Royale
+Módulo: Autenticación
+Tema:
+Crear y refinar el diagrama de casos de uso del módulo de Autenticación, incluyendo todas las interacciones necesarias para la gestión de usuarios.
+Casos de uso principales:
+- Crear Cuenta
+- Iniciar Sesión
+- Recuperar Contraseña
+- Cerrar Sesión
+Objetivo del seguimiento:
+Definir los actores, relaciones <<include>> y <<extend>>, y validar el flujo seguro de autenticación.
+Módulo: Gestión de Personaje
+Tema:
+Diseñar y optimizar el diagrama de casos de uso para la gestión y personalización de personajes dentro del juego.
+- Casos de uso principales:
+- Seleccionar Personaje
+- Personalizar Apariencia
+- Asignar Habilidades
+Objetivo del seguimiento:
+Asegurar que se contemplen todos los caminos de personalización previos al inicio de partida.
+Módulo: Matchmaking y Juego
+Tema:
+Crear el diagrama de casos de uso para el flujo de búsqueda, conexión a partidas y gameplay principal.
+- Casos de uso principales:
+- Seleccionar Modo de Juego
+- Buscar Partida
+- Unirse a Partida
+- Jugar Partida
+- Cancelar Búsqueda (extensión)
+
+Objetivo del seguimiento:
+Cubrir las transiciones desde lobby a juego activo de forma robusta.
+Módulo: Comunicación
+Tema:
+Definir el diagrama de casos de uso que modela el sistema de comunicación entre jugadores.
+Casos de uso principales:
+- Usar Chat de Texto
+- Usar Chat de Voz
+- Silenciar Jugadores (extensión)
+
+Objetivo del seguimiento:
+Garantizar la comunicación fluida entre jugadores y opciones de control sobre otros usuarios.
+Módulo: Recompensas y Progresión
+Tema:
+- Armar el diagrama de casos de uso que gestione el sistema de progresión, premios y desbloqueos.
+- Casos de uso principales:
+- Ganar Recompensas
+- Desbloquear Contenido
+- Subir de Nivel
+
+Objetivo del seguimiento:
+Visualizar claramente cómo la progresión del jugador se activa tras jugar partidas.
+Módulo: Tienda y Microtransacciones
+Tema: 
+Diseñar el diagrama de casos de uso que represente la interacción de los jugadores con la tienda del juego.
+Casos de uso principales:
+Ver Tienda
+Comprar Ítems
+Comprar Pase de Batalla
+
+Objetivo del seguimiento:
+Reflejar el flujo de compra tanto con moneda interna como real.
+Módulo: Reportes y Moderación
+Tema:
+Crear el diagrama de casos de uso del sistema de denuncias y revisión de comportamientos inapropiados.
+Casos de uso principales:
+- Reportar Jugador
+- Revisar Reportes
+Objetivo del seguimiento:
+- Asegurar un proceso moderado y justo para mantener la comunidad saludable.
+- Sugerencia de Checklist de Progreso para Cada Issue
+- Identificación de Actores 
+- Detección de Casos de Uso principales 
+- Definición de relaciones <<include>> y <<extend>> 
+- Borrador inicial del diagrama 
+- Validación con el equipo 
+- Ajustes finales 
+- Integración al documento maestro 
+
