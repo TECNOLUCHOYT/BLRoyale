@@ -228,6 +228,139 @@ Anti-Cheat: Requiere controladores en nivel kernel (Easy Anti-Cheat o similar)
 Periféricos recomendados: Auriculares con micrófono, controlador opcional
 
 Crossplay completo entre PC y consolas de última generación.
+personajes principales
+
+
+
+1. Viper
+Rol: Asesino / Francotirador
+Personalidad: Fría, calculadora y estratégica. Siempre analizando el campo de batalla para dar el golpe mortal.
+Apariencia:
+
+Vestimenta: Traje sigiloso negro con detalles metálicos en verde fosforescente. Máscara de alta tecnología que oculta su rostro.
+
+Armadura: Ligera, prioriza movilidad y sigilo.
+
+Habilidades:
+
+"Impacto Letal": Disparo de precisión que aturde a los enemigos durante unos segundos, ideal para acabar con un enemigo vulnerable.
+
+"Visión Nocturna": Activación temporal de visión infrarroja que revela a los enemigos cercanos a través de paredes finas y humo.
+
+2. Titan
+Rol: Tanque / Protector
+Personalidad: Imparable, confiable, siempre dispuesto a proteger a sus compañeros. La fuerza bruta personificada.
+Apariencia:
+
+Vestimenta: Armadura pesada de alto impacto, con detalles de titanio y un emblema que simboliza su estatus de protector.
+
+Armadura: Pesada, con escudo de energía en su brazo derecho.
+
+Habilidades:
+
+"Escudo Imparable": Activa un escudo de energía que bloquea balas y daño durante unos segundos.
+
+"Golpe Sísmico": Realiza un golpe con su puño que aturde a los enemigos cercanos y provoca una onda de choque.
+
+3. Phantom
+Rol: Infiltrador / Sabotaje
+Personalidad: Astuto, impredecible, siempre un paso adelante. Su principal objetivo es desestabilizar al enemigo desde las sombras.
+Apariencia:
+
+Vestimenta: Traje de camuflaje avanzado con capacidades de invisibilidad. Detalles en tonos grises oscuros y púrpura.
+
+Armadura: Ligera y flexible, permite moverse rápidamente sin restricciones.
+
+Habilidades:
+
+"Invisibilidad Táctica": Se vuelve invisible durante unos segundos, ideal para acercarse a los enemigos o escapar de una situación difícil.
+
+"Corte Energético": Utiliza un cuchillo de energía para atacar en sigilo, causando daño masivo por sorpresa.
+
+4. Blaze
+Rol: Comandante / Apoyo
+Personalidad: Líder nato, motivador, siempre guiando a su equipo hacia la victoria. Utiliza su habilidad para coordinar a sus compañeros de equipo en el campo.
+Apariencia:
+
+Vestimenta: Traje de comandante con detalles rojos y dorados, como una capa que ondea detrás de ella.
+
+Armadura: Moderada, permite cierto grado de agilidad sin sacrificar protección.
+
+Habilidades:
+
+"Mando Táctico": Aumenta temporalmente las capacidades de sus compañeros cercanos (velocidad, daño, etc.).
+
+"Llamado al Fuego": Lanza una señal de humo que llama a un ataque aéreo para bombardear una zona determinada.
+
+RESUNEM DEL JUEGO
+
+
+BL Royale – Resumen del juego
+BL Royale es un juego de acción battle royale futurista, diseñado para llevar la competencia al siguiente nivel. Enfréntate a hasta 100 jugadores en un vasto campo de batalla lleno de peligros y sorpresas, donde solo uno puede salir victorioso. Con una jugabilidad dinámica y de ritmo rápido, los jugadores deben usar sus habilidades estratégicas, armas avanzadas y el entorno a su favor para sobrevivir.
+
+Características principales:
+Mapa expansivo y detallado: Explora entornos variados, desde ciudades futuristas hasta zonas rurales y paisajes desolados. Cada partida es diferente gracias a eventos aleatorios y zonas cambiantes.
+
+Personajes únicos: Elige entre varios héroes con habilidades y roles especiales, como francotiradores, tanques, infiltradores y más. Cada personaje aporta un estilo de juego único, desde combate directo hasta apoyo estratégico.
+
+Habilidades especiales: Cada héroe tiene un conjunto de habilidades únicas, desde invisibilidad hasta ataques aéreos, lo que permite una gran variedad de estrategias en el campo de batalla.
+
+Crossplay y progresión cruzada: Juega con tus amigos sin importar la plataforma. BL Royale está disponible en PC y consolas, con la opción de mantener tu progreso y objetos desbloqueados entre dispositivos.
+
+Acción intensa: El combate es rápido y táctico, con la posibilidad de usar vehículos, cubrirse detrás de estructuras destructibles y aplicar un enfoque estratégico para ser el último sobreviviente.
+
+Eventos dinámicos: Zonas de tormenta, caos y modificaciones del mapa que hacen que cada partida sea única y emocionante.
+
+Con un estilo visual futurista, personajes carismáticos y una jugabilidad fluida, BL Royale es la propuesta definitiva para quienes buscan un battle royale lleno de acción, estrategia y emoción constante.
+
+¡Sobrevive, lucha y domina la arena!
+Disponible en PC y consolas, Y en moviles con soporte crossplay y progresión cruzada.
+
+fecha de lanzamiento
+15 de octubre del 2025
+
+beta creada el 1 de septiembre del 2025
+
+Acceso anticipado: 10 de octubre de 2025 (para jugadores que se registren en el pre-lanzamiento)
+
+
+Modelo de monetización:
+Juego base: Gratis (descargable en Steam, Epic Games, PlayStation, Xbox)
+
+Pase de batalla:
+
+Precio: $4.990 CLP por temporada (aproximadamente)
+
+Cada temporada podría durar unos 2-3 meses, y el pase incluiría cosméticos exclusivos, personajes, emotes y más.
+
+Compras dentro del juego:
+
+Skins para personajes: Desde $1.990 CLP a $9.990 CLP por paquetes de skins o cosméticos exclusivos.
+
+Paquetes de monedas premium (para la tienda del juego):
+
+1000 Monedas: $2.000 CLP
+
+2500 Monedas: $4.500 CLP
+
+5000 Monedas: $8.000 CLP
+
+Eventos especiales o skins limitadas: Precios que varían, con descuentos durante ofertas especiales, promociones o colaboraciones.
+
+Resumen:
+
+Gratis para jugar.
+
+Pase de batalla: $4.990 CLP por temporada.
+
+Cosméticos: Desde $1.990 CLP a $9.990 CLP.
+
+Formas de pago
+tarjetas de credito o debito
+mastercard
+visa 
+paypal
+
 
 
 
