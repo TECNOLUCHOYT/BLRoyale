@@ -110,21 +110,93 @@ Jugador
 
 
 
-plataformas disponibles
-pc
-playstation 4
-playstation 5
-play store
-apps store
-xbox series x
-nintendo  switch
+Plataformas disponibles para BL Royale
+🖥️ PC:
+Steam
+
+Epic Games Store
+🎮 Consolas:
+
+PlayStation 5
+
+PlayStation 4 (con optimización reducida)
+
+Xbox Series X | S
+
+Xbox One (soporte limitado o con mínimos gráficos reducidos)
 
 
-requisitos
-para moviles 
-android 10 en adelante 
-procesdor snapdragon870
-ram 2 gigas de ram 
+✅ Requisitos mínimos (Android / iOS):
+
+📱 Android:
+Sistema operativo: Android 10 o superior
+
+Procesador: Snapdragon 730 / MediaTek Helio G90T
+
+Memoria RAM: 4 GB
+
+GPU: Adreno 618 o Mali-G76
+
+Almacenamiento: 6 GB libres (con descarga adicional en juego)
+
+Red: Conexión 4G o Wi-Fi estable
+
+📱 iOS:
+
+
+Dispositivo mínimo: iPhone XR, iPhone SE (2da gen), iPad (7ª gen)
+
+Sistema operativo: iOS 14 o superior
+
+Almacenamiento: 3 GB libres
+
+Red: Conexión 4G o Wi-Fi estable
+
+
+
+🔝 Requisitos recomendados (Android / iOS):
+
+📱 Android:
+Sistema operativo: Android 12 o superior
+
+Procesador: Snapdragon 865 / Dimensity 1200 o superior
+
+Memoria RAM: 6 GB o más
+
+GPU: Adreno 650 o superior
+
+Pantalla: 90 Hz o superior recomendada para fluidez
+
+Red: Wi-Fi 5G o 5G móvil para baja latencia
+
+
+📱 iOS:
+Dispositivo recomendado: iPhone 13 / iPhone 14 / iPad Air M1
+
+Sistema operativo: iOS 16 o superior
+
+RAM: 6 GB
+
+Red: Wi-Fi 6 o red 5G
+
+
+
+
+🎮 Compatibilidad adicional:
+Soporte para mandos: Mando Bluetooth (PS4, Xbox, Backbone, etc.)
+
+Crossplay: Solo entre dispositivos móviles (no PC/Consolas por balance)
+
+Progresión cruzada: Sí, si se usa cuenta vinculada (BL ID)
+
+Opciones gráficas móviles: Bajo, Medio, Alto (sin Ray Tracing)
+
+
+
+
+
+
+
 
 
 requerimientos de pc minimos
@@ -154,6 +226,12 @@ Soporte para Ray Tracing: Activado solo en tarjetas RTX / RDNA 2 o superior
 Anti-Cheat: Requiere controladores en nivel kernel (Easy Anti-Cheat o similar)
 
 Periféricos recomendados: Auriculares con micrófono, controlador opcional
+
+Crossplay completo entre PC y consolas de última generación.
+
+
+
+
 
 
 
