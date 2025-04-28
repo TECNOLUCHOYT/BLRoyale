@@ -106,7 +106,11 @@ Jugador
   |---> Comprar Ítems en la Tienda
   |
   |---> Consultar Perfil / Estadística
+
+
+
 plataformas disponibles
+
 pc
 playstation 4
 playstation 5
