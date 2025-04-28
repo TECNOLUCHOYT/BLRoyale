@@ -109,8 +109,8 @@ Jugador
 
 
 
-plataformas disponibles
 
+plataformas disponibles
 pc
 playstation 4
 playstation 5
