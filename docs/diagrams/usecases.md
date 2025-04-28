@@ -147,6 +147,14 @@ DirectX: Versión 12
 Procesador: Intel Core i7-9700K o AMD Ryzen 5 5600X
 
 
+Requisitos adicionales (funciones opcionales):
+
+Soporte para Ray Tracing: Activado solo en tarjetas RTX / RDNA 2 o superior
+
+Anti-Cheat: Requiere controladores en nivel kernel (Easy Anti-Cheat o similar)
+
+Periféricos recomendados: Auriculares con micrófono, controlador opcional
+
 
 
 
