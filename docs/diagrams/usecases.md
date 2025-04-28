@@ -362,6 +362,105 @@ visa
 paypal
 
 
+Códigos para Recompensas Gratuitas en BL Royale
+1. Código de Bienvenida
+Código: WELCOMEBLROYALER
+
+Recompensa: 500 monedas premium + skin rara para el personaje principal.
+
+Descripción: Código exclusivo para los nuevos jugadores, con el fin de darles un impulso en sus primeras partidas.
+
+Válido: Solo para los primeros 7 días tras el lanzamiento (15-22 de octubre de 2025).
+
+2. Código de Evento Especial (Lanzamiento)
+Código: LAUNCHGIFT
+
+Recompensa: Paquete de 1,000 monedas premium + emote exclusivo de celebración.
+
+Descripción: Para celebrar el lanzamiento del juego, los jugadores pueden recibir recompensas exclusivas durante la primera semana del juego.
+
+Válido: Desde el 15 de octubre de 2025 hasta el 22 de octubre de 2025.
+
+3. Código de Recompensa por Registro Previo
+Código: PREORDERBONUS
+
+Recompensa: Skin exclusiva + 1000 monedas premium.
+
+Descripción: Para los jugadores que se registraron durante la fase de pre-lanzamiento o pre-registro.
+
+Válido: Desde el 1 de septiembre hasta el 14 de octubre de 2025.
+
+4. Código de Recompensas de Invitar a Amigos
+Código: FRIENDSHIPBOOST
+
+Recompensa: 500 monedas premium + un "boost" de experiencia para tus próximos 5 juegos.
+
+Descripción: Los jugadores pueden obtener este código al invitar a amigos a unirse al juego. Los jugadores invitados también recibirán una recompensa por registrarse.
+
+Válido: Infinito, pero limitado a un uso por jugador.
+
+5. Código para Logro en el Juego
+Código: FIRSTVICTORY
+
+Recompensa: 1,000 monedas premium + skin de "campeón" (exclusiva para el primer jugador que gane una partida).
+
+Descripción: Otorgado a jugadores que logren su primera victoria en BL Royale.
+
+Válido: Solo para la primera victoria de cada jugador.
+
+6. Código de Evento Estacional (Navidad/Invierno)
+Código: WINTER2025
+
+Recompensa: Paquete de cosméticos navideños + 500 monedas premium.
+
+Descripción: Evento especial de temporada navideña. Los jugadores reciben un paquete exclusivo con temática invernal.
+
+Válido: Durante el evento de invierno (diciembre de 2025).
+
+7. Código de Apreciación de la Comunidad
+Código: THANKYOU2025
+
+Recompensa: 2,000 monedas premium + una "caja de sorpresas" que incluye una skin aleatoria, emote y boost de experiencia.
+
+Descripción: Para agradecer a los jugadores por su apoyo y participación activa en la comunidad.
+
+Válido: Disponible después de los primeros 3 meses de lanzamiento (enero de 2026).
+
+8. Código para Recompensas de Red Social
+Código: SOCIALMEDIABOOST
+
+Recompensa: 300 monedas premium + un emote exclusivo de "me gusta".
+
+Descripción: Código promocional exclusivo para jugadores que sigan las redes sociales oficiales del juego o participen en un evento de streaming.
+
+Válido: Disponible durante eventos en redes sociales (por ejemplo, transmisiones en vivo, concursos de hashtags).
+
+9. Código para Aniversario del Juego
+Código: BLROYALE1YEAR
+
+Recompensa: 1,000 monedas premium + una skin temática de aniversario.
+
+Descripción: Para celebrar el primer aniversario del juego. Este código estará disponible por tiempo limitado durante la semana del aniversario.
+
+Válido: Disponible solo durante el mes de lanzamiento del aniversario (octubre de 2026).
+
+Cómo Funciona el Sistema de Códigos:
+Activación de Códigos: Los códigos de recompensa se pueden activar en una sección especial dentro del juego (menú de ajustes o tienda) o a través de un portal web. Los jugadores ingresan el código en el campo correspondiente y reciben sus recompensas al instante.
+
+Restricciones: Algunos códigos pueden ser de un solo uso, otros pueden tener limitaciones por evento o por cuenta. Es importante establecer reglas claras sobre su validez.
+
+Estrategias para Distribuir los Códigos:
+Redes Sociales: Publicar los códigos en las cuentas oficiales de BL Royale en Twitter, Facebook, Instagram, etc.
+
+Campañas de Marketing: Incluir códigos en campañas de anuncios pagados, correos electrónicos a la comunidad y promociones de lanzamiento.
+
+Colaboraciones con Streamers: Los streamers de Twitch y YouTube pueden distribuir códigos exclusivos durante sus transmisiones.
+
+Eventos dentro del juego: Desbloquear códigos de recompensa a medida que los jugadores completan hitos o desafíos dentro del juego.
+
+
+
+
 
 
 
