@@ -118,11 +118,15 @@ play store
 apps store
 xbox series x
 nintendo  switch
+
+
 requisitos
 para moviles 
 android 10 en adelante 
 procesdor snapdragon870
 ram 2 gigas de ram 
+
+
 requerimientos de pc minimos
 Windows 10 (64-bit)
 Procesador: Intel Core i5-4460 o AMD FX-6300
@@ -131,6 +135,8 @@ Tarjeta gráfica: NVIDIA GeForce GTX 960 o AMD Radeon R7 370 (2 GB VRAM)
 Almacenamiento: 30 GB de espacio disponible
 Conexión a Internet: Banda ancha para juego en línea
 DirectX: Versión 11
+
+
 reqisitos de pc recomendados 
 Sistema operativo: Windows 11 (64-bit)
 Memoria RAM: 16 GB
