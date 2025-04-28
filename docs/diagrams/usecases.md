@@ -1,6 +1,6 @@
 # diagrama de caso de uso
 Definición general del cliente objetivo de BL Royale:
-Edad: 14 a 30 años
+Edad: 18 a años recomendado
 
 Género: Principalmente masculino, pero buscando atraer también a jugadoras (incluir personajes diversos ayuda).
 
