@@ -10,3 +10,7 @@ Explora ruinas urbanas, bosques radiactivos y fortalezas flotantes mientras reco
 desbloqueas habilidades especiales y formas alianzas (o traiciones) en tiempo real. Solo los más astutos
 dominarán el Círculo BL, una tormenta que no solo reduce el campo de juego, sino que altera la realidad misma.
  ¿Serás tú quien lleve las iniciales B y L a la victoria final?
+
+
+
+ crear un dibujo de una pantalla de un computador
