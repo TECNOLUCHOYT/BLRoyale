@@ -1,0 +1,67 @@
+Diagrama de Clases sobre los casos de uso de un Sistema de Gestión de Turnos Médicos, como:
+- Registrar paciente
+- Solicitar turno
+- Cancelar turno
+- Atender paciente
+- Consultar historial clínico
+
+Este modelo representa los actores, entidades y servicios principales de manera sencilla y entendible.
+✅ Diagrama de Clases — PlantUML Resumido
+- plantuml
+- Copiar
+- Editar
+
+@startuml
+
+' Interfaces
+interface Notificable {
+    +Notificar(mensaje: string): void
+}
+' Clases principales
+class Usuario {
+    -id: int
+    -nombre: string
+    -email: string
+    +Autenticarse(): bool
+}
+class Paciente {
+    -dni: string
+    +SolicitarTurno(fecha: DateTime, medico: Medico): Turno
+}
+class Medico {
+    -especialidad: string
+    +Atender(turno: Turno): HistoriaClinica
+}
+class Turno {
+    -fecha: DateTime
+    -estado: string
+    +Cancelar(): void
+}
+class HistoriaClinica {
+    -fecha: DateTime
+    -descripcion: string
+}
+class GestorDeTurnos {
+    +AsignarTurno(paciente: Paciente, medico: Medico, fecha: DateTime): Turno
+    +CancelarTurno(turno: Turno): bool
+}
+' Relaciones
+Usuario <|-- Paciente
+Usuario <|-- Medico
+Paciente --> Turno
+Medico --> Turno
+Turno --> HistoriaClinica : genera >
+GestorDeTurnos --> Turno
+Paciente ..|> Notificable
+Medico ..|> Notificable
+
+@enduml
+🔍 Resumen y Coherencia con los Casos de Uso:
+
+- Caso de Uso	Clases involucradas
+- Registrar Paciente	Paciente, Usuario
+- Solicitar Turno	Paciente, GestorDeTurnos, Turno
+- Cancelar Turno	Paciente, GestorDeTurnos, Turno
+- Atender Paciente	Medico, Turno, HistoriaClinica
+- Consultar Historial	Medico, HistoriaClinica
+- Notificación de eventos	Notificable (implementado por usuarios)
