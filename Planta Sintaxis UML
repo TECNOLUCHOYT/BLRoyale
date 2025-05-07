@@ -1,0 +1,191 @@
+docs/analysis/diagrams/usecases/startuml.svg
+✅ 1. Sintaxis correcta en PlantUML
+Asegurate de que el archivo de tu diagrama tenga esta estructura básica:
+
+- plantuml
+- Copiar
+- Editar
+@startuml
+
+title Sistema de Gestión de Turnos Médicos
+
+' Clases e interfaces
+interface Notificable {
+    +Notificar(mensaje: string): void
+}
+
+class Usuario {
+    -id: int
+    -nombre: string
+    -email: string
+    +Autenticarse(): bool
+}
+
+class Paciente {
+    -dni: string
+    +SolicitarTurno(fecha: DateTime, medico: Medico): Turno
+}
+
+class Medico {
+    -especialidad: string
+    +Atender(turno: Turno): HistoriaClinica
+}
+
+class Turno {
+    -fecha: DateTime
+    -estado: string
+    +Cancelar(): void
+}
+
+class HistoriaClinica {
+    -fecha: DateTime
+    -descripcion: string
+}
+
+class GestorDeTurnos {
+    +AsignarTurno(paciente: Paciente, medico: Medico, fecha: DateTime): Turno
+    +CancelarTurno(turno: Turno): bool
+}
+
+' Relaciones
+Usuario <|-- Paciente
+Usuario <|-- Medico
+Paciente --> Turno
+Medico --> Turno
+Turno --> HistoriaClinica : genera >
+GestorDeTurnos --> Turno
+Paciente ..|> Notificable
+Medico ..|> Notificable
+
+@enduml
+✅ 2. Cómo generar un archivo .svg
+Puedes generar el diagrama .svg desde la terminal con PlantUML instalado o usando un editor como VS Code con la extensión PlantUML.
+
+🔧 Opción 1: Usando la terminal (PlantUML instalado)
+Guarda tu diagrama en un archivo, por ejemplo:
+- bash
+- Copiar
+- Editar
+docs/analysis/diagrams/usecases/startuml.puml
+Ejecutá el siguiente comando para generar el .svg:
+- bash
+- Copiar
+- Editar
+
+plantuml -tsvg docs/analysis/diagrams/usecases/startuml.puml
+Esto generará:
+- bash
+- Copiar
+- Editar
+docs/analysis/diagrams/usecases/startuml.svg
+📝 Nota importante:
+Asegurate de tener Java instalado y PlantUML configurado.
+
+Podés usar plantuml.jar directamente también:
+- bash
+- Copiar
+- Editar
+
+java -jar plantuml.jar -tsvg docs/analysis/diagrams/usecases/startuml.puml
+✅ 3. Estructura de carpetas final:
+- markdown
+- Copiar
+- Editar
+docs/
+└── analysis/
+    ├── diagrams/
+    │   └── usecases/
+    │       ├── startuml.puml
+    │       └── startuml.svg   ← archivo generado
+    └── usecases.md
+Diagrama de Clases completo en formato PlantUML, diseñado para un Sistema de Gestión de Turnos Médicos, con:
+- Clases principales.
+- Atributos con tipos como int, string, bool.
+- Métodos básicos.
+
+Relaciones bien definidas: asociación, composición, y herencia.
+✅ Diagrama de Clases en PlantUML (Plantilla lista para .puml)
+- plantuml
+- Copiar
+- Editar
+- @startuml
+
+title Sistema de Gestión de Turnos Médicos
+
+' Interfaces
+interface Notificable {
+    +Notificar(mensaje: string): void
+}
+
+' Clase base
+class Usuario {
+    -id: int
+    -nombre: string
+    -email: string
+    -password: string
+    +Autenticarse(email: string, password: string): bool
+}
+
+' Subclases
+class Paciente {
+    -dni: string
+    -telefono: string
+    +SolicitarTurno(fecha: string, medico: Medico): Turno
+    +CancelarTurno(turno: Turno): bool
+}
+
+class Medico {
+    -matricula: string
+    -especialidad: string
+    +AtenderPaciente(turno: Turno): HistoriaClinica
+    +ListarTurnos(): List<Turno>
+}
+
+' Entidades del dominio
+class Turno {
+    -id: int
+    -fecha: string
+    -estado: string
+    +Cancelar(): void
+    +Confirmar(): void
+}
+
+class HistoriaClinica {
+    -id: int
+    -resumen: string
+    -fecha: string
+    +AgregarEntrada(nota: string): void
+}
+
+class Agenda {
+    -id: int
+    -diasDisponibles: string
+    -horario: string
+    +AgregarTurno(turno: Turno): void
+}
+
+' Clase de servicio
+class GestorDeTurnos {
+    +AsignarTurno(paciente: Paciente, medico: Medico, fecha: string): Turno
+    +CancelarTurno(turno: Turno): bool
+    +ListarTurnosPaciente(paciente: Paciente): List<Turno>
+}
+
+' Relaciones
+Usuario <|-- Paciente
+Usuario <|-- Medico
+Paciente ..> Turno : solicita >
+Medico ..> Turno : atiende >
+Medico --> Agenda : administra >
+Turno --> HistoriaClinica : crea >
+GestorDeTurnos --> Turno
+Paciente ..|> Notificable
+Medico ..|> Notificable
+Agenda *-- Turno : contiene >
+
+@enduml
+📌 Explicación de relaciones:
+- Herencia: Paciente y Medico heredan de Usuario.
+- Asociación: Paciente solicita Turno, Médico atiende Turno.
+- Composición (*--): Agenda contiene turnos; si se elimina la agenda, se eliminan sus turnos.
+- Dependencia (..>): relación funcional entre clases, por ejemplo, Paciente usa Turno.
