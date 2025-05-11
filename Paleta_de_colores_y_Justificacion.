@@ -42,3 +42,57 @@
 - Se priorizan tonos fríos (azul, verde) para mantener una sensación moderna.
 - Los acentos cálidos (rojo, amarillo) equilibran emocionalmente la experiencia, comunicando urgencia y recompensas.
 
+Perfecto. A continuación te presento la **paleta de colores completa para BL Royale**, con **justificación detallada en 5 puntos** como solicitaste:
+
+---
+
+## 🎨 Paleta de Colores para BL Royale
+
+| Tipo                 | Color HEX | Uso Principal                                         |
+| -------------------- | --------- | ----------------------------------------------------- |
+| **Fondo principal**  | `#121212` | Fondo oscuro para enfoque en el contenido, modo gamer |
+| **Primario**         | `#1E88E5` | Botones, enlaces activos, resaltados clave            |
+| **Secundario**       | `#00E676` | Éxito, estados positivos, energía                     |
+| **Alerta / Error**   | `#FF5252` | Mensajes de error, daño, advertencias                 |
+| **Texto principal**  | `#FFFFFF` | Texto general sobre fondo oscuro                      |
+| **Texto secundario** | `#B0BEC5` | Subtítulos, detalles, etiquetas menores               |
+| **Fondo tarjetas**   | `#1E1E1E` | Tarjetas, paneles, componentes UI                     |
+| **Borde suave**      | `#333333` | Delimitaciones sutiles entre componentes              |
+| **Resaltado HUD**    | `#FFD600` | Para indicadores de turno, energía, premios           |
+
+---
+
+## 🧠 Justificación de la Paleta (5 Puntos)
+
+### ✅ 1. Coherencia Visual y Armonía (2 Puntos)
+
+* Todos los colores están **basados en una estética futurista y profesional**, usando tonos fríos y oscuros con acentos brillantes (azules, verdes, amarillos).
+* Se mantiene una **jerarquía clara** entre fondo, texto y acciones, evitando confusión visual.
+* La paleta crea un **ambiente inmersivo y consistente** entre todas las pantallas del juego.
+* El contraste fuerte entre colores (texto blanco sobre fondo negro, botones brillantes sobre tarjetas oscuras) **asegura accesibilidad** y facilidad de lectura.
+
+---
+
+### ✅ 2. Adecuación al Tipo de Aplicación y Público (3 Puntos)
+
+#### 🕹️ A. Naturaleza del Proyecto: *BL Royale*
+
+* Es un **juego competitivo** online, con temática táctica o de combate.
+* Requiere un entorno **energético pero controlado**, donde los colores deben motivar al jugador sin saturarlo.
+
+#### 🧑‍💻 B. Público objetivo: *Jugadores jóvenes, entusiastas de eSports o RPGs*
+
+* Los usuarios buscan **una interfaz envolvente**, con estilo gamer.
+* Esta paleta **resuena con tendencias actuales** en diseño de interfaces para videojuegos (Dark Mode, UI neon, HUD estilo sci-fi).
+
+#### 🎯 C. Funcionalidad del diseño
+
+* **Azul eléctrico (`#1E88E5`)**: estimula atención y confianza. Ideal como color primario para botones, ítems seleccionados.
+* **Verde neón (`#00E676`)**: comunica avance, éxito, energía. Perfecto para estados "ready", salud, carga.
+* **Rojo coral (`#FF5252`)**: alerta sin ser agresivo, para mostrar errores o ataques recibidos.
+* **Amarillo oro (`#FFD600`)**: enfocado en logros o turnos activos. Brilla sobre fondo oscuro.
+
+#### ⚖️ D. Balance de tonos fríos/cálidos
+
+* Se priorizan **tonos fríos (azul, verde)** para mantener una sensación moderna.
+* Los **acentos cálidos (rojo, amarillo)** equilibran emocionalmente la experiencia, comunicando urgencia y recompensas.
