@@ -1,0 +1,277 @@
+🎮 Guía de Estilo UI - BL Royale
+
+Una referencia central para mantener coherencia visual y funcional en toda la aplicación web de BL Royale.
+
+🎨 1. Paleta de Colores
+
+| Nombre           | HEX           | Uso Principal                                |
+|--------------------------------------------------------------------------------|
+| Fondo Principal  | #121212       | Fondo base oscuro para inmersión             |
+| Primario         | #1E88E5       | Botones, enlaces activos, acentos            |
+| Secundario       | #00E676       | Indicadores positivos, salud, confirmaciones |
+| Alerta/Error     | #FF5252       | Errores, daño, advertencias                  |
+| Texto Principal  | #FFFFFF       | Texto en general                             |
+| Texto Secundario | #B0BEC5       |
+
+Subtítulos, metainformación
+
+Fondo de Tarjetas
+
+#1E1E1E
+
+Contenedores, tarjetas, paneles
+
+Bordes
+
+#333333
+
+Separaciones suaves entre bloques
+
+Resaltado Especial
+
+#FFD600
+
+Premios, turnos activos, elementos clave
+
+🔤 2. Tipografía
+
+Fuente Base: Orbitron, sans-serif (estilo gamer, geométrico)
+
+Elemento
+
+Tamaño
+
+Peso
+
+Uso
+
+Títulos (h1)
+
+32px
+
+Bold
+
+Pantallas principales
+
+Subtítulos (h2)
+
+24px
+
+SemiBold
+
+Secciones internas
+
+Texto base (p)
+
+16px
+
+Regular
+
+Cuerpo general de texto
+
+Etiquetas / Meta
+
+14px
+
+Medium
+
+Estadísticas, indicadores menores
+
+Interlineado: 1.5x del tamaño de fuente
+
+Espaciado entre párrafos: 16px
+
+Transformación: MAYÚSCULAS para títulos y botones
+
+📦 3. Componentes UI
+
+🔘 Botones
+
+Bordes redondeados: 12px
+
+Padding: 12px 24px
+
+Estados: default, hover (brillo y escala leve), disabled (opacidad 0.5)
+
+button.primary {
+  background-color: #1E88E5;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: transform 0.2s ease;
+}
+button.primary:hover {
+  transform: scale(1.05);
+  background-color: #2196F3;
+}
+
+🧩 Tarjetas
+
+Fondo: #1E1E1E
+
+Sombra suave: 0 4px 12px rgba(0, 0, 0, 0.3)
+
+Padding interno: 16px
+
+Borde: 1px solid #333
+
+Usos: estadísticas, historial, información del jugador
+
+🔲 Inputs
+
+Fondo oscuro, borde claro al enfocar
+
+Espaciado interno: 10px
+
+Bordes: 8px
+
+🔄 Loader / Estado de espera
+
+Elementos animados con @keyframes
+
+Estilo: círculos pulsantes o radar estilo sci-fi
+
+🧭 4. Navegación y Layout
+
+Menú superior (NavBar)
+
+Posición fija arriba
+
+Altura: 64px
+
+Fondo semitransparente: rgba(18, 18, 18, 0.95)
+
+Elementos:
+
+Logo BL Royale
+
+Links: Inicio, Dashboard, Perfil, Cerrar Sesión
+
+Layout General
+
+Máximo ancho: 1200px, centrado
+
+Grid de 12 columnas para disposición de elementos
+
+Breakpoints:
+
+> 1200px: Escritorio completo
+
+768px - 1200px: Tablet
+
+< 768px: Móvil (stacked UI)
+
+🖼️ 5. Iconografía
+
+Librería sugerida: Lucide o Phosphor Icons
+
+Estilo minimalista, lineal, de 24px
+
+Íconos comunes:
+
+user, gamepad, shield, log-out, star, swords
+
+Color del ícono: mismo que texto (blanco o gris)
+
+📱 6. Accesibilidad y Contraste
+
+Contraste mínimo de 4.5:1 entre texto y fondo
+
+Navegación con teclado disponible
+
+Uso de aria-labels para botones e inputs importantes
+
+Foco visual claro en elementos interactivos
+
+✅ 7. Buenas Prácticas
+
+Reutilizar componentes antes de crear nuevos
+
+No saturar la interfaz con efectos innecesarios
+
+Priorizar la claridad en los CTA (botones de acción)
+
+Usar estados visuales para mostrar feedback de interacción (hover, loading, success)
+
+🗂️ 8. Organización de Archivos
+
+bl-royale/
+├── index.html
+├── /assets/
+│   ├── /images/
+│   ├── /icons/
+├── /components/
+│   ├── header.js
+│   ├── dashboard-card.js
+├── /styles/
+│   ├── base.css
+│   ├── dashboard.css
+│   ├── responsive.css
+├── /docs/
+│   ├── ui-design.md
+│   ├── README.md
+├── /scripts/
+│   ├── router.js
+│   ├── app.js
+
+components/: Web Components reutilizables
+
+styles/: CSS modularizado por función o pantalla
+
+docs/: Documentación central
+
+scripts/: JavaScript funcional
+
+🧩 9. GitHub Issues: Gestión de Diseño y Desarrollo
+
+Usar Issues para planificar y documentar decisiones importantes:
+
+📝 Ejemplos de Issues Estructurados:
+
+Issue #
+
+Título
+
+Tipo
+
+Estado
+
+#1
+
+Crear sistema de ruteo SPA básico
+
+Feature
+
+Abierto
+
+#2
+
+Diseñar componente 
+
+UI/UX
+
+Cerrado
+
+#3
+
+Ajustes responsive en Dashboard
+
+Mejora
+
+Abierto
+
+#4
+
+Documentar guía de estilo
+
+Documentación
+
+Cerrado
+
+🧠 Recomendaciones:
+
+Cada issue debe incluir: descripción clara, criterios de aceptación, screenshots si aplica
+
+Usar etiquetas: feature, bug, documentation, enhancement
+
+Hacer commit asociado a un issue usando: git commit -m "#3 Ajuste responsive en Dashboard"
