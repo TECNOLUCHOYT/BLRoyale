@@ -5,6 +5,7 @@ Una referencia central para mantener coherencia visual y funcional en toda la ap
 🎨 1. Paleta de Colores
 
 | Nombre            | HEX         | Uso Principal                                |
+----------------------------------------------------------------------------------
 | Fondo Principal   | #121212     | Fondo base oscuro para inmersión.            |
 | Primario          | #1E88E5     | Botones, enlaces activos, acentos.           |
 | Secundario        | #00E676     | Indicadores positivos, salud, confirmaciones.|
@@ -20,6 +21,7 @@ Una referencia central para mantener coherencia visual y funcional en toda la ap
 Fuente Base: Orbitron, sans-serif (estilo gamer, geométrico)
 
 | Elemento                   | Tamaño        | Peso     | Uso                              | 
+--------------------------------------------------------------------------------------------
 | Títulos (h1)               | 32px          | Bold     | Pantallas principales            |
 | Subtítulos (h2)            | 24px          | SemiBold | Secciones internas               |
 | Texto base (p)             | 16px          | Regular  | Cuerpo general de texto          |
@@ -33,8 +35,8 @@ Fuente Base: Orbitron, sans-serif (estilo gamer, geométrico)
 
 🔘 Botones
 
-- Bordes redondeados: 12px
-- Padding: 12px 24px
+- Bordes redondeados: 12px.
+- Padding: 12px 24px.
 
 Estados: default, hover (brillo y escala leve), disabled (opacidad 0.5)
 
@@ -50,84 +52,68 @@ button.primary:hover {
   background-color: #2196F3;
 }
 
-🧩 Tarjetas
+🧩 Tarjetas:
 
-Fondo: #1E1E1E
+- Fondo: #1E1E1E
+- Sombra suave: 0 4px 12px rgba(0, 0, 0, 0.3).
+- Padding interno: 16px.
+- Borde: 1px solid #333.
+- Usos: estadísticas, historial, información del jugador.
 
-Sombra suave: 0 4px 12px rgba(0, 0, 0, 0.3)
+🔲 Inputs:
 
-Padding interno: 16px
-
-Borde: 1px solid #333
-
-Usos: estadísticas, historial, información del jugador
-
-🔲 Inputs
-
-Fondo oscuro, borde claro al enfocar
-
-Espaciado interno: 10px
-
-Bordes: 8px
+- Fondo oscuro, borde claro al enfocar.
+- Espaciado interno: 10px.
+- Bordes: 8px.
 
 🔄 Loader / Estado de espera
 
-Elementos animados con @keyframes
+- Elementos animados con @keyframes.
+- Estilo: círculos pulsantes o radar estilo sci-fi.
 
-Estilo: círculos pulsantes o radar estilo sci-fi
+🧭 4. Navegación y Layout:
 
-🧭 4. Navegación y Layout
-
-Menú superior (NavBar)
-
-Posición fija arriba
-
-Altura: 64px
-
-Fondo semitransparente: rgba(18, 18, 18, 0.95)
+- Menú superior (NavBar).
+- Posición fija arriba.
+- Altura: 64px.
+- Fondo semitransparente: rgba(18, 18, 18, 0.95).
 
 Elementos:
 
-Logo BL Royale
-
-Links: Inicio, Dashboard, Perfil, Cerrar Sesión
-
-Layout General
-
-Máximo ancho: 1200px, centrado
-
-Grid de 12 columnas para disposición de elementos
+- Logo BL Royale.
+- Links: Inicio, Dashboard, Perfil, Cerrar Sesión.
+- Layout General.
+- Máximo ancho: 1200px, centrado.
+- Grid de 12 columnas para disposición de elementos.
 
 Breakpoints:
 
 > 1200px: Escritorio completo
-
 768px - 1200px: Tablet
-
 < 768px: Móvil (stacked UI)
 
 🖼️ 5. Iconografía
 
-- Librería sugerida: Lucide o Phosphor Icons
-- Estilo minimalista, lineal, de 24px
+- Librería sugerida: Lucide o Phosphor Icons.
+- Estilo minimalista, lineal, de 24px.
 
 Íconos comunes:
-- user, gamepad, shield, log-out, star, swords
-Color del ícono: mismo que texto (blanco o gris)
+- user, gamepad, shield, log-out, star, swords.
+- Color del ícono: mismo que texto (blanco o gris).
 
-📱 6. Accesibilidad y Contraste
+📱 6. Accesibilidad y Contraste:
 
-- Contraste mínimo de 4.5:1 entre texto y fondo
-- Navegación con teclado disponible
-- Uso de aria-labels para botones e inputs importantes
-- Foco visual claro en elementos interactivos
+- Contraste mínimo de 4.5:1 entre texto y fondo.
+- Navegación con teclado disponible.
+- Uso de aria-labels para botones e inputs importantes.
+- Foco visual claro en elementos interactivos.
 
-✅ 7. Buenas Prácticas
+✅ 7. Buenas Prácticas:
 
-- Reutilizar componentes antes de crear nuevos
-- No saturar la interfaz con efectos innecesarios
-- Priorizar la claridad en los CTA (botones de acción)
-- Usar estados visuales para mostrar feedback de interacción (hover, loading, success)
+- Reutilizar componentes antes de crear nuevos.
+- No saturar la interfaz con efectos innecesarios.
+- Priorizar la claridad en los CTA (botones de acción).
+- Usar estados visuales para mostrar feedback de interacción (hover, loading, success).
 - Esta guía es un documento vivo y puede ser extendido según evolucione la aplicación.
 
-© 2025 — Equipo de Diseño de BL Royale
+© 2025 — Equipo de Diseño de BL Royale.
