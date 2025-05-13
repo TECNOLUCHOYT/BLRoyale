@@ -1,0 +1,265 @@
+Planta Sintaxis de UML.
+🗂️ Estructura de Carpetas y Archivos Sugerida
+Copiar
+Editar
+BLRoyaleDiagram/
+├── clases/
+│   └── BLRoyaleClases.startuml
+├── svg/
+│   └── BLRoyaleClases.svg
+📝 Archivo: BLRoyaleClases.startuml
+pl
+Copiar
+Editar
+@startuml BLRoyaleClases
+
+' Estilo general
+skinparam classAttributeIconSize 0
+skinparam classFontSize 14
+skinparam classAttributeFontSize 12
+skinparam classMethodFontSize 12
+
+' Clases base
+class Usuario {
+  - idUsuario: int
+  - nombreUsuario: string
+  - email: string
+  - contraseña: string
+  - fechaRegistro: datetime
+  - esAdmin: bool
+  --
+  + iniciarSesion(): bool
+  + cerrarSesion(): void
+  + registrarse(): Usuario
+  + actualizarPerfil(): void
+}
+
+class Jugador {
+  - nivel: int
+  - experiencia: int
+  - monedasBLC: int
+  - monedasBLP: int
+  - listaAmigos: List<Jugador>
+  --
+  + jugarPartida(): void
+  + ganarExperiencia(puntos: int): void
+  + obtenerRecompensa(): void
+  + comprarObjeto(obj: Objeto): bool
+  + agregarAmigo(jugador: Jugador): void
+}
+
+class Administrador {
+  - privilegios: List<string>
+  --
+  + banearJugador(jugador: Jugador): void
+  + verEstadisticasGlobales(): void
+  + moderarChat(): void
+  + gestionarTienda(): void
+}
+
+class Partida {
+  - idPartida: int
+  - fechaInicio: datetime
+  - fechaFin: datetime
+  - jugadores: List<Jugador>
+  - estado: string
+  --
+  + iniciarPartida(): void
+  + finalizarPartida(): void
+  + determinarGanador(): Jugador
+}
+
+class Objeto {
+  - idObjeto: int
+  - nombre: string
+  - tipo: string
+  - precioBLC: int
+  - precioBLP: int
+  - disponibilidad: bool
+  --
+  + desbloquear(): void
+}
+
+class Tienda {
+  - objetosDisponibles: List<Objeto>
+  --
+  + mostrarObjetos(): List<Objeto>
+  + venderObjeto(jugador: Jugador, obj: Objeto): bool
+}
+
+class Recompensa {
+  - idRecompensa: int
+  - descripcion: string
+  - tipo: string
+  - valorMoneda: int
+  --
+  + reclamar(): void
+}
+
+class Logro {
+  - idLogro: int
+  - descripcion: string
+  - progreso: int
+  - meta: int
+  - completado: bool
+  --
+  + actualizarProgreso(): void
+  + verificarCompletado(): bool
+}
+
+class Estadistica {
+  - idEstadistica: int
+  - partidasJugadas: int
+  - victorias: int
+  - killsTotales: int
+  - promedioSobrevivencia: float
+}
+
+class Chat {
+  - idChat: int
+  - participantes: List<Jugador>
+  - mensajes: List<string>
+  --
+  + enviarMensaje(texto: string): void
+  + recibirMensaje(): string
+}
+
+' Relaciones
+Usuario <|-- Jugador
+Usuario <|-- Administrador
+Jugador "1" -- "*" Partida : participa
+Jugador "1" -- "*" Objeto : posee
+Jugador "1" -- "*" Recompensa : gana
+Jugador "1" -- "*" Logro : desbloquea
+Jugador "1" -- "1" Estadistica : tiene
+Jugador "1" -- "*" Chat : participa
+Tienda "1" -- "*" Objeto : contiene
+
+@enduml
+
+⚙️ Cómo Generar el Archivo SVG
+1. Usando la línea de comandos (si tienes PlantUML instalado localmente):
+
+- bash
+- Copiar
+- Editar
+java -jar plantuml.jar -tsvg clases/BLRoyaleClases.startuml -o ../svg/
+Con PlantUML en línea:
+
+2. Copia el contenido de BLRoyaleClases.startuml en https://plantuml.com/ o https://www.planttext.com/.
+
+📚 Resumen de la Sintaxis PlantUML aplicada a BL Royale
+🟩 1. Inicio y fin del diagrama:
+
+- plantuml
+- Copiar
+- Editar
+@startuml NombreDelDiagrama
+...contenido...
+@enduml
+
+En nuestro caso usamos:
+
+- plantuml
+- Copiar
+- Editar
+@startuml BLRoyaleClases
+@enduml
+Esto le indica a PlantUML que el contenido entre esas líneas será interpretado como un diagrama.
+
+🟩 2. Clases:
+
+- pl
+- Copiar
+- Editar
+class NombreDeLaClase {
+    + metodoPublico(): TipoRetorno
+    - atributoPrivado: Tipo
+    # atributoProtegido: Tipo
+}
+Ejemplo del juego:
+plantuml
+Copiar
+Editar
+class Jugador {
+  - nivel: int
+  - experiencia: int
+  + jugarPartida(): void
+  + ganarExperiencia(puntos: int): void
+}
++: público
+
+-: privado
+
+#: protegido
+
+🟩 3. Herencia (Generalización):
+
+- plantuml
+- Copiar
+- Editar
+ClasePadre <|-- ClaseHija
+
+En BL Royale:
+
+plantuml
+Copiar
+Editar
+Usuario <|-- Jugador
+Usuario <|-- Administrador
+Significa que Jugador y Administrador heredan de Usuario.
+
+🟩 4. Asociaciones entre clases:
+
+- plantuml
+- Copiar
+- Editar
+Clase1 "1" -- "*" Clase2 : relación
+Los números indican cardinalidad:
+
+"1": uno
+
+"*": muchos
+
+Ejemplo:
+plantuml
+Copiar
+Editar
+Jugador "1" -- "*" Partida : participa
+Un jugador puede participar en muchas partidas.
+
+🟩 5. Contención / Composición (opcional):
+
+- plantuml
+- Copiar
+- Editar
+ClaseContenedora *-- ClaseContenido
+Usado si una clase contiene otra de forma fuerte (por ejemplo, una tienda tiene objetos). En el modelo actual usamos asociación simple, pero también podrías aplicar composición si lo deseas.
+
+🟩 6. Estilo del diagrama (opcional):
+
+- plantuml
+- Copiar
+- Editar
+skinparam classFontSize 14
+skinparam classAttributeFontSize 12
+Esto ajusta el tamaño de texto dentro de las clases para mejorar la legibilidad del diagrama generado.
+
+🎮 ¿Cómo se refleja esto en BL Royale?
+Concepto UML	Sintaxis PlantUML	Ejemplo BL Royale
+Clase	class Nombre { atributos y métodos }	class Jugador { ... }
+Herencia	`SuperClase <	-- SubClase`
+Asociación	"1" -- "*" : relación	Jugador "1" -- "*" Partida : participa
+Métodos públicos	+ metodo(): tipo	+ jugarPartida(): void
+Atributos privados	- atributo: tipo	- nivel: int
+
+🔧 ¿Qué necesito para usar esta sintaxis?
+Instalar PlantUML localmente o usar una herramienta en línea:
+
+https://plantuml.com/
+
+https://www.planttext.com/
+
+- Guardar tu código en un archivo .puml o .startuml
+- Ejecutar con Java (si local) o exportar como .svg, .png, .pdf, etc.
+
