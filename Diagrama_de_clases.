@@ -1,0 +1,271 @@
+📘 DESCRIPCIÓN COMPLETA DEL DIAGRAMA DE CLASES – BL ROYALE
+🔷 1. Clase: Usuario
+
+Descripción: Representa a cualquier persona registrada en el sistema, incluyendo jugadores y administradores.
+Atributos:
+- idUsuario: int
+- nombreUsuario: string
+- email: string
+- contraseña: string
+- fechaRegistro: datetime
+- esAdmin: bool
+
+Métodos:
+- iniciarSesion(): bool
+- cerrarSesion(): void
+- registrarse(): Usuario
+- actualizarPerfil(): void
+
+Relaciones:
+- Hereda a Jugador
+- Tiene una asociación con Sesion
+- Si esAdmin es true, se comporta como Administrador
+
+Casos de uso relacionados:
+- Registrarse/Iniciar sesión
+- Acceder como administrador
+
+🔷 2. Clase: Jugador (hereda de Usuario)
+Descripción: Es el tipo de usuario que participa en partidas y usa todas las funcionalidades del juego.
+
+Atributos:
+
+- nivel: int
+- experiencia: int
+- monedasBLC: int (moneda virtual)
+- monedasBLP: int (moneda premium)
+- listaAmigos: List<Jugador>
+
+Métodos:
+
+- jugarPartida(): void
+- ganarExperiencia(puntos: int): void
+- obtenerRecompensa(): void
+- comprarObjeto(obj: Objeto): bool
+- agregarAmigo(jugador: Jugador): void
+
+Relaciones:
+
+- Participa en muchas Partida
+- Tiene una colección de Logro, Recompensa, Objeto, Estadistica
+- Puede enviar mensajes a través de Chat
+
+Casos de uso relacionados:
+
+- Unirse a partida
+- Ganar experiencia
+- Comprar en la tienda
+- Reclamar recompensas
+- Interactuar con amigos
+
+🔷 3. Clase: Administrador (hereda de Usuario)
+Descripción: Tiene privilegios para gestionar jugadores, moderar contenido y monitorear el sistema.
+
+Atributos:
+- privilegios: List<string>
+
+Métodos:
+
+banearJugador(jugador: Jugador): void
+
+verEstadisticasGlobales(): void
+
+moderarChat(): void
+
+gestionarTienda(): void
+
+Casos de uso relacionados:
+
+Moderar jugadores
+
+Revisar estadísticas
+
+Gestionar tienda y recompensas
+
+🔷 4. Clase: Partida
+Descripción: Representa una sesión de juego en la que participan varios jugadores.
+
+Atributos:
+
+- idPartida: int
+- fechaInicio: datetime
+- fechaFin: datetime
+- jugadores: List<Jugador>
+- estado: string (En curso, Finalizada)
+
+Métodos:
+
+- iniciarPartida(): void
+- finalizarPartida(): void
+- determinarGanador(): Jugador
+
+Relaciones:
+
+- Muchos Jugador participan
+- Genera Estadistica al finalizar
+
+Casos de uso relacionados:
+
+- Jugar partida
+- Obtener recompensas
+- Calcular resultados
+
+🔷 5. Clase: Objeto
+Descripción: Representa elementos cosméticos o de personalización disponibles en la tienda.
+
+Atributos:
+- idObjeto: int
+- nombre: string
+- tipo: string (skin, baile, traje, etc.)
+- precioBLC: int
+- precioBLP: int
+- disponibilidad: bool
+
+Métodos:
+
+- desbloquear(): void
+
+Relaciones:
+
+- Pertenecen a muchos Jugador
+- Se venden en Tienda
+
+Casos de uso relacionados:
+
+-Comprar en tienda
+- Personalizar personaje
+
+🔷 6. Clase: Tienda
+Descripción: Sistema que permite la compra de objetos usando monedas.
+
+Atributos:
+
+- objetosDisponibles: List<Objeto>
+
+Métodos:
+
+- mostrarObjetos(): List<Objeto>
+- venderObjeto(jugador: Jugador, obj: Objeto): bool
+
+Relaciones:
+
+- Relación con Objeto
+- Usada por Jugador
+
+Casos de uso relacionados:
+
+- Comprar en tienda
+- Visualizar objetos
+
+🔷 7. Clase: Recompensa
+Descripción: Premios que el jugador obtiene por su progreso o por logros.
+
+Atributos:
+- idRecompensa: int
+- descripcion: string
+- tipo: string (Diaria, Logro, Evento)
+- valorMoneda: int
+
+Métodos:
+
+- reclamar(): void
+
+Relaciones:
+
+- Asociada a Jugador
+- Casos de uso relacionados:
+- Reclamar recompensas diarias
+- Obtener recompensas por logros
+
+🔷 8. Clase: Logro
+Descripción: Marca metas alcanzadas por el jugador.
+
+Atributos:
+
+- idLogro: int
+- descripcion: string
+- progreso: int
+- meta: int
+- completado: bool
+
+Métodos:
+
+- actualizarProgreso(): void
+- verificarCompletado(): bool
+
+Relaciones:
+
+- Asociado a Jugador
+
+Casos de uso relacionados:
+
+- Logros desbloqueados
+- Seguimiento de metas
+
+🔷 9. Clase: Estadistica
+Descripción: Información sobre el rendimiento del jugador en partidas.
+
+Atributos:
+
+- idEstadistica: int
+- partidasJugadas: int
+- victorias: int
+- killsTotales: int
+- promedioSobrevivencia: float
+
+Relaciones:
+
+- Vinculada a Jugador
+
+Casos de uso relacionados:
+
+- Ver estadísticas
+
+🔷 10. Clase: Chat
+Descripción: Mecanismo de comunicación entre jugadores.
+
+Atributos:
+
+- idChat: int
+- participantes: List<Jugador>
+- mensajes: List<string>
+
+Métodos:
+
+- enviarMensaje(texto: string): void
+- recibirMensaje(): string
+
+Relaciones:
+
+- Usado por Jugador
+
+Casos de uso relacionados:
+
+- Interactuar con amigos
+- Comunicación en partidas
+
+🔄 Relaciones Generales (Resumen UML)
+
+Herencia:
+  - Usuario → Jugador
+  - Usuario → Administrador
+
+Asociaciones:
+  - Jugador participa en Partida
+  - Jugador tiene Objeto, Logro, Recompensa, Estadistica
+  - Tienda contiene Objeto
+  - Jugador interactúa mediante Chat
+
+📌 Conexión con Casos de Uso.
+
+| Caso de Uso	Clases    | Principales Involucradas       |
+|-----------------------|--------------------------------|
+| Registro / Login      |	Usuario, Sesion                |
+| Jugar partida	        | Jugador, Partida, Estadistica  |
+| Ganar experiencia	    | Jugador, Partida               |
+| Comprar en la tienda  | Tienda, Objeto, Jugador        |
+| Obtener recompensas 	| Recompensa, Jugador, Logro     |
+| Ver estadísticas	    | Estadistica, Jugador           |
+| Agregar               | amigos / Chat	Jugador, Chat    |
+|Moderación del sistema |	Administrador, Jugador, Chat   |
+
