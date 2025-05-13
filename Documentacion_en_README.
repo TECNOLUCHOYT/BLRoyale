@@ -1,0 +1,213 @@
+📄 Archivo: ClassDiagram-SistemaUsuariosYProductos.plantuml
+
+plantuml
+Copiar
+Editar
+@startuml
+title Diagrama de Clases - Sistema de Usuarios y Productos
+
+' Estilos
+skinparam classAttributeIconSize 0
+skinparam classFontColor Black
+skinparam backgroundColor #FDFDFD
+skinparam classBackgroundColor White
+skinparam shadowing false
+
+' Clase Usuario
+class Usuario {
+    - ID: int
+    - Nombre: string
+    - Email: string
+    - Password: string
+    - Activo: bool
+    + Login(password: string): bool
+    + UpdateProfile(nombre: string, email: string): error
+}
+
+' Clase Administrador
+class Administrador {
+    - ID: int
+    - Nombre: string
+    - Email: string
+    - Password: string
+    + AgregarProducto(p: Producto): void
+    + ListarUsuarios(): []string
+}
+
+' Clase Producto
+class Producto {
+    - ID: int
+    - Nombre: string
+    - Descripcion: string
+    - Precio: float64
+    - Disponible: bool
+}
+
+' Clase Carrito
+class Carrito {
+    - ID: int
+    - UsuarioID: int
+    - Productos: []Producto
+    + AgregarProducto(p: Producto): void
+    + QuitarProducto(id: int): void
+    + Vaciar(): void
+    + Comprar(): bool
+}
+
+' Relaciones
+Administrador --> Producto : agrega
+Carrito "1" --> "0..*" Producto : contiene >
+Carrito --> Usuario : pertenece a >
+Usuario <|-- Administrador : herencia lógica
+
+@enduml
+
+✅ Pasos que debes seguir en tu proyecto:
+Crear archivo .plantuml:
+Crea el archivo:
+
+swift
+Copiar
+Editar
+docs/analysis/diagrams/class/ClassDiagram-SistemaUsuariosYProductos.plantuml
+Pegar el código anterior.
+Copia y pega el contenido tal cual.
+
+Visualizar en VS Code:
+Usa la extensión PlantUML para abrir el archivo y generar la vista previa del diagrama. Ajusta si deseas.
+
+Refinar si es necesario:
+Si durante el desarrollo cambian campos, relaciones o métodos, actualiza el archivo .plantuml.
+
+Exportar como SVG:
+En VS Code, usa el comando PlantUML: Export Current Diagram y guarda como:
+
+swift
+Copiar
+Editar
+docs/analysis/diagrams/class/ClassDiagram-SistemaUsuariosYProductos.svg
+✅ Tipos de Datos en Uso:
+
+- Todos los atributos están correctamente definidos usando los tipos nativos de Go:
+- int: para identificadores (ID, UsuarioID).
+- string: para campos de texto (Nombre, Email, Descripcion, Password).
+- bool: para estados lógicos (Activo, Disponible).
+- float64: para montos en dinero (Precio).
+- []Producto: para listas de productos en el carrito.
+
+
+
+
+
+📝 Archivo: docs/analysis/diagrams/class/ClassDiagram-SistemaGestion.plantuml
+
+pl
+Copiar
+Editar
+@startuml ClassDiagram-SistemaGestion
+
+title Diagrama de Clases - Sistema de Gestión de Usuarios y Productos
+
+skinparam classAttributeIconSize 0
+skinparam classFontSize 14
+skinparam classAttributeFontSize 12
+skinparam classMethodFontSize 12
+
+' === CLASE: Usuario ===
+class Usuario {
+    - ID: int
+    - Nombre: string
+    - Email: string
+    - Password: string
+    - Activo: bool
+    + Login(password: string): bool
+    + UpdateProfile(nombre: string, email: string): error
+}
+
+' === CLASE: Administrador ===
+class Administrador {
+    - ID: int
+    - Nombre: string
+    - Email: string
+    - Password: string
+    + AgregarProducto(p: Producto)
+    + ListarUsuarios(): []string
+}
+
+' === CLASE: Producto ===
+class Producto {
+    - ID: int
+    - Nombre: string
+    - Descripcion: string
+    - Precio: float64
+    - Disponible: bool
+}
+
+' === CLASE: Carrito ===
+class Carrito {
+    - ID: int
+    - UsuarioID: int
+    - Productos: []Producto
+    + AgregarProducto(p: Producto)
+    + QuitarProducto(id: int)
+    + Vaciar()
+    + Comprar(): bool
+}
+
+' === RELACIONES ===
+Usuario "1" --> "1" Carrito : posee
+Administrador --> Producto : administra
+Carrito --> Producto : contiene
+
+@enduml
+📂 Ubicación del archivo
+
+Guarda este contenido en la ruta exacta de tu proyecto:
+
+cpp
+Copiar
+Editar
+docs/
+└── analysis/
+    └── diagrams/
+        └── class/
+            └── ClassDiagram-SistemaGestion.plantuml
+🛠️ Visualización del Diagrama
+Abre Visual Studio Code.
+
+Instala y habilita la extensión PlantUML.
+
+Abre el archivo .plantuml.
+
+Haz clic derecho y selecciona "Preview Current Diagram" o usa el atajo Alt + D.
+
+💾 Exportación a SVG
+En la vista previa de PlantUML, selecciona "Export as SVG".
+
+Guarda el archivo como:
+
+swift
+Copiar
+Editar
+docs/analysis/diagrams/class/ClassDiagram-SistemaGestion.svg
+
+📌 Descripción y Refinamiento
+Este diagrama refleja claramente:
+Las clases principales de nuestro sistema: Usuario, Administrador, Producto, y Carrito.
+Relaciones lógicas:
+
+- Cada usuario tiene un carrito.
+- El administrador puede administrar productos.
+- El carrito contiene productos.
+- Métodos relevantes están especificados dentro de las clases como interfaz de operaciones básicas.
+- Los tipos de atributos siguen los tipos básicos requeridos: int, string, bool, float64.
+
+✅ Resumen del Diseño:
+
+- Se definieron las clases Usuario, Administrador, Producto y Carrito, alineadas con los casos de uso.
+- Cada clase tiene atributos con tipos de datos correctos (int, string, bool, float, list<>).
+- Se incluyeron los métodos esenciales de cada entidad para representar sus responsabilidades.
+- Las relaciones entre clases fueron modeladas con asociaciones claras:
+- Un Administrador puede agregar productos.
+- Un Usuario tiene un Carrito.
+- Un Carrito contiene varios Productos.
